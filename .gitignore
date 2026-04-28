@@ -1,6 +1,40 @@
+# Python cache
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
+
+# Datasets - do not upload large data
+dataset/*.jsonl
+dataset/*.csv
+dataset/*.bin
+
+# Model weights and checkpoints
+out/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Official downloaded model
+minimind-3/
+minimind-3-pytorch/
+
+# Logs and caches
+logs/
+*.log
+.cache/
+modelscope/
+wandb/
+swanlog/
+swanlab/
+
+# Virtual environments
+venv/
+env/
+.venv/
+minimind_env_clean/
+
+# OS/temp files
 .DS_Store
-out
-website/
-docs-minimind/
+*.tmp
