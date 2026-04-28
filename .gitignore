@@ -2,10 +2,12 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
+# 只忽略 dataset 中的大数据，不忽略 dataset 目录本身
 dataset/*.jsonl
 dataset/*.csv
 dataset/*.bin
 
+# 模型权重和断点
 out/
 checkpoints/
 *.pth
@@ -13,9 +15,11 @@ checkpoints/
 *.ckpt
 *.safetensors
 
+# 官方模型
 minimind-3/
 minimind-3-pytorch/
 
+# 日志和缓存
 logs/
 *.log
 .cache/
@@ -24,6 +28,7 @@ wandb/
 swanlog/
 swanlab/
 
+# 虚拟环境
 venv/
 env/
 .venv/
